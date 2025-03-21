@@ -1,0 +1,98 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Ensure the gradient covers the entire page */
+html, body {
+    height: 100%; /* Make the html and body elements take up the full height of the viewport */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    /* Background color acts as a fallback if the gradient fails to load */
+    background-color: #ffffff;
+    /* Gradient provides a visually appealing transition from light to dark green */
+    background-image: linear-gradient(to bottom, #c0cfb2, #8ba888, #44624a);
+    background-repeat: no-repeat; /* Prevents the gradient from repeating */
+    background-size: cover; /* Ensures the gradient covers the entire viewport */
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #2c694e;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #4c5a43;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #6f7c5e;
+}
+
+/* Title screen */
+#title-screen {
+    display: block;
+}
+
+/* Game screen */
+#game-container {
+    display: none;
+    margin-top: 20px;
+}
+
+#choices-container {
+    margin-top: 20px;
+}
+
+#choices-container button {
+    display: block;
+    width: 200px;
+    margin: 10px auto;
+}
+
+/* Game Over screen */
+#game-over-screen {
+    display: none;
+    margin-top: 20px;
+}
+
+/* Loading screen */
+#loading-screen {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Hidden class to toggle visibility */
+.hidden {
+    display: none;
+}
+
+p {
+    font-size: 1.3em;
+    margin-bottom: 20px;
+    color: #444;
+}
+
+#items {
+    font-weight: bold;
+}
