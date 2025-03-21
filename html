@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Title Screen -->
+    <div id="title-screen">
+        <h1>Welcome to My Game</h1>
+        <p>Click below to start your adventure!</p>
+        <button id="start-button">Start Game</button> <!-- Start button -->
+    </div>
+
+    <!-- Loading Screen -->
+    <div id="loading-screen" style="display: none;">
+        <p>Loading...</p>
+    </div>
+
+    <!-- Game Container -->
+    <div id="game-container" style="display: none;">
+        <div id="game-header">
+            <h2>Adventure Awaits!</h2>
+        </div>
+        <div id="story"></div>
+        <div id="choices-container"></div>
+        <div id="inventory">Inventory: <span id="items"></span></div>
+    </div>
+
+    <!-- Game Over Screen -->
+    <div id="game-over-screen" style="display: none;">
+        <h1>Game Over</h1>
+        <button id="restart">Restart</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
